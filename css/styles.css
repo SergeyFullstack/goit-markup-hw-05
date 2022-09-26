@@ -182,16 +182,21 @@ ul {
 
 .contacts-tel,.contacts-mail{
    fill:#757575;
+   transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+
  
 }
 .header-contacts a{
 color: #757575;
+display: flex;
+
 
 }
 .contacts-tel:hover,
 .contacts-tel:focus {
   color: var(--hover-focus-color);
   fill: #2196f3;
+ 
 }
 
 .contacts-mail:hover,
@@ -251,20 +256,26 @@ color: #757575;
 }
 
 .button-order-service {
+  width: 216px;
+  height: 50px;
+  display: inline-block;
+  box-sizing: border-box;
   color: var(--secondary-text-color);
   background-color: #2196f3;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  min-width: 216px;
-  padding: 10px 32px;
   margin-top: 30px;
   margin-left: 477px;
   margin-right: 477px;
   margin-bottom: 200px;
+  letter-spacing: 0.06em;
+  word-break: keep-all;
+  hyphens: none;
   cursor: pointer;
   border-radius: 4px;
+  border: none;
   border-color: var(--hover-focus-color);
   text-align: center;
 }
@@ -290,18 +301,17 @@ color: #757575;
 
 .text-business{
   margin: 0;
-  display: block;
+  display:flex;
   width: 370px;
   height: 70px;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   left: 0;
   bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -394,7 +404,7 @@ color: #757575;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team-soc-link:hover,
@@ -438,6 +448,11 @@ fill:currentColor;
   min-height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.icon-clients{
+transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .link-clients:hover{
@@ -465,6 +480,7 @@ border-color: var(--hover-focus-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation:hover,
 .navigation:focus {
@@ -605,7 +621,9 @@ border-color: var(--hover-focus-color);
   text-align: center;
   word-break: keep-all;
   hyphens: none;
-  border: none;}
+  border: none;
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
   
 
 .b_1 {
@@ -718,6 +736,7 @@ overflow: hidden;
 .projects-list {
   max-width: 370px;
   position: relative;
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-filters {
@@ -803,7 +822,8 @@ height:44px;
 align-items:center;
 justify-content:center;
 background-color:#43444D;
-border-radius: 50%; 
+border-radius: 50%;
+transition:250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .socials-icon-footer{
